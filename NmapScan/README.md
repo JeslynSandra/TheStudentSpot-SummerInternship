@@ -39,6 +39,12 @@ notepad scan_result.txt
 nmap -sV localhost > scan_result_det.txt
 notepad scan_result_det.txt
 
+To go deeper, I ran a full-port SYN scan on localhost using:
+
+nmap -sS -T4 -p- 127.0.0.1 > full_port_scan.txt
+notepad full_port_scan.txt
+
+
 ## WHAT I DID
 First, I ran a basic scan to see which TCP ports on my local machine were open. I saved the results to a file called scan_result.txt and opened it in Notepad to check the findings.
 
@@ -57,6 +63,7 @@ After that, I used the -sV option to get more detailed information about each op
 
 - scan_result.txt – Basic Nmap scan output
 - scan_result_det.txt – Detailed scan with service/version detection
+- full_port_scan.txt - Full port SYN scan
 - README.md – Full task documentation
 
 ## WHAT I LEARNED
