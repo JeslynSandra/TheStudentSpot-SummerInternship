@@ -37,14 +37,32 @@ Set up and configure a basic firewall using UFW (Uncomplicated Firewall) on an U
 ### 1. Update package list
 ```bash
 sudo apt update
+```
+2.Install UFW
+```bash
 sudo apt install ufw
+```
+3.sudo ufw status
+```bash
 sudo ufw status
+```
+4. Set default policies
+```bash
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
+```
+5. Allow SSH 
+```bash 
 sudo ufw allow ssh
+```
+6. Enable UFW
+```bash 
 sudo ufw enable
+```
+7. Verify status
+```bash
 sudo ufw status verbose
-
+```
 What I Learned
 This task taught me how to:
 
