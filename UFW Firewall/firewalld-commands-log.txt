@@ -1,0 +1,37 @@
+# Install firewalld
+sudo dnf install firewalld -y
+
+# Enable and start firewalld
+sudo systemctl enable firewalld
+sudo systemctl start firewalld
+
+# Check firewalld status
+sudo systemctl status firewalld
+
+# (First attempt had typo)
+firewall-cmd --permanent --add-services=ssh
+
+# Correct command to add SSH (already enabled)
+sudo firewall-cmd --permanent --add-service=ssh
+
+# View active services and zones
+sudo firewall-cmd --list-all
+
+# Add HTTP and HTTPS services
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+
+# Add custom TCP port 8080
+sudo firewall-cmd --permanent --add-port=8080/tcp
+
+# Apply all rule changes
+sudo firewall-cmd --reload
+
+# Verify active services and ports after reload
+sudo firewall-cmd --list-all
+
+# Remove HTTP service (test command)
+sudo firewall-cmd --permanent --remove-service=http
+
+# Reload again to apply removal
+sudo firewall-cmd --reload
