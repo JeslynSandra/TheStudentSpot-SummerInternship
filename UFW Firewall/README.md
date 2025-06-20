@@ -13,7 +13,7 @@ This task is part of the **Cybersecurity Internship** under **The Student Spot S
 | Operating System | CentOS Stream 9 (64-bit)  |
 | Virtual Machine  | VirtualBox                |
 | Firewall Tool    | firewalld                 |
-| Interface Used   | Terminal (CLI)            |
+| Interface Used   | Terminal                  |
 
 ---
 
@@ -72,7 +72,6 @@ firewall-rules.png - Displays real-time firewall configuration: services (like S
 firewalld-commands-log.txt – log of commands used 
 
 ## What I Learned
-This task honestly made me realize how simple but powerful firewall setup can be. I always thought it’d be super complicated, but using firewalld was actually straightforward once I got the hang of it.
+Before this, I had already explored some basic Linux commands in CentOS, but this task really helped me go deeper into how firewalls actually function. It wasn’t just about running a few commands — I got to understand what each service does, how to control access through ports, and why it matters in securing a system.
 
-I learned how to allow and block services, open specific ports, and reload changes — all through the terminal. It felt good to see those changes reflect immediately. Now I get why this is such an important first step in securing any system.
-
+Getting hands-on with firewalld gave me a much clearer picture of how firewall rules are structured and applied in real time. Overall, it was a solid opportunity to move beyond theory and really grasp how Linux firewalls help keep systems safe.
